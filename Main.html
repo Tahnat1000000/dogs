@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
+    <style>
+        th.A01 {
+            background-color: #d8d8d8;
+        }
+
+        div.infor {
+            bottom: 2px;
+        }
+
+        div.BottomBar {
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <!-- Logo -->
+    <center>
+        <marquee direction="right" bgcolor="#FFE5CC" onmouseover="this.stop()" onmouseout="this.start()">
+            <font style="color:orangered; font-weight:700;">כלבים לאימוץ:</font>
+            <font style="color:black; font-weight:700;">...</font>
+        </marquee>
+        <div class="logo"></div>
+
+        <!-- Menu -->
+        <table align="center" class="MENU">
+            <tr>
+                <th class="A01"><a class="A1" href="Main.html">דף ראשי</a></th>
+                <th class="A02"><a class="A1" href="Races/01.html">גזעים</a></th>
+                <th class="A03"><a class="A1" href="Diseases/01.html">מחלות</a></th>
+                <th class="A04" style=" width:230px;"><a class="A1" href="Backg.html">רקעים ותמונות</a></th>
+                <th class="A05"><a class="A1" href="Survey.html">סקר</a></th>
+                <th class="A06"><a class="A1" href="AboutUs.html">צרו קשר</a></th>
+            </tr>
+        </table>
+
+        <!-- Body-->
+
+        <div class="infor" dir="rtl" style="height: 700px;">
+            <br />
+            <p style="font-size:30px; font-weight:700;">
+                ברוכים הבאים לאתר, כאן תמצאו מידע על כלבים, גזעים ומחלות.
+                <br />
+                תוכלו להוריד תמונות רקע, ולענות על הסקר.
+                <br />
+                גלישה מהנה!.
+            </p>
+            <br />
+            <p>
+                <img id="MainPhoto" style="width:600px; height:350px;" />
+            </p>
+
+        </div>
+
+        <!-- Bottom Bar-->
+        <div class="BottomBar" style="font-size:18px;">
+        </div>
+
+    </center>
+
+    <script>
+        var count = 0;
+        var pics = new Array();
+        for (count = 0; count < 8; count++) {
+            pics[count] = "MainImages/" + count + ".jpg";
+        }
+        count = 0;
+        function ChangePhoto() {
+            
+            if (count == 8) {
+                count = 0;
+                document.getElementById("MainPhoto").src = pics[count];
+            } else {
+                document.getElementById("MainPhoto").src = pics[count];
+                count++;
+            }
+            setTimeout("ChangePhoto()", 1500);
+        }
+
+        window.onload = ChangePhoto();
+
+    </script>
+</body>
+</html>

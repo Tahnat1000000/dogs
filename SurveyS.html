@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+    <title></title> 
+    <link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
+    <style>
+        th.A05 {
+            background-color: #d8d8d8;
+        }
+        div.infor {
+            bottom: 2px;
+        }
+
+        div.BottomBar {
+
+        }
+    </style>
+
+</head>
+<body dir="rtl">
+    <!-- Logo -->
+    <center>
+        <div class="logo" style="background-image:url(logo.jpg);"></div>
+
+        <!-- Menu -->
+        <table align="center" class="MENU">
+            <tr>
+                <th class="A01"><a class="A1" href="Main.html">דף ראשי</a></th>
+                <th class="A02"><a class="A1" href="Races/01.html">גזעים</a></th>
+                <th class="A03"><a class="A1" href="Diseases/01.html">מחלות</a></th>
+                <th class="A04" style=" width:230px;"><a class="A1" href="Backg.html">רקעים ותמונות</a></th>
+                <th class="A05"><a class="A1" href="Survey.html">סקר</a></th>
+                <th class="A06"><a class="A1" href="AboutUs.html">צרו קשר</a></th>
+            </tr>
+        </table>
+
+        <!-- Body-->
+        <!--            הסקר           -->
+        <div class="infor" dir="rtl" style="height: 700px;">
+            <font style="font-size:100px;">סקר</font>
+        
+            <div align="right" style="margin-right:10px;">
+                <form name="survey" onsubmit="return CHECKIT(this)">
+
+                    <font style="font-size:30px;">מין:</font><br />
+                    <div id="notgood0" style="color:red; font-weight:700;"> חובה לבחור את אחד האפשרויות. </div>
+                    <input type="radio" name="gender" /> זכר
+                    <input type="radio" name="gender" /> נקבה
+
+                    <br /><br /><br />
+                    <font style="font-size:30px;">איזור מגורים:</font><br />
+                    <div id="notgood1" style="color:red; font-weight:700;"> חובה לבחור את אחד האפשרויות. </div>
+                    <input type="radio" name="area" /> צפון
+                    <input type="radio" name="area" /> מרכז
+                    <input type="radio" name="area" /> דרום
+
+                    <br /><br /><br />
+
+                    <font style="font-size:30px;">סוג בית:</font><br />
+                    <div id="notgood2" style="color:red; font-weight:700;"> חובה לבחור את אחד האפשרויות. </div>
+                    <input type="radio" name="home" /> קרקע
+                    <input type="radio" name="home" /> ביניין
+
+                    <br /><br /><br />
+
+                    <font style="font-size:30px;">גזע כלבים אהוב:</font><br /><br />
+                    <select name="racesl">
+                        <option value="1">קוקר ספאנייל</option>
+                        <option value="2">סמוייד</option>
+                        <option value="3">שפיץ יפני</option>
+                        <option value="4">פומרניאן</option>
+                        <option value="5">פודל</option>
+                        <option value="6">דני ענק</option>
+                        <option value="7">דלמטי</option>
+                        <option value="8">דועה גרמני</option>
+                        <option value="9">רועה קווקזי</option>
+                        <option value="10">רועה בלגי</option>
+                        <option value="11">בולדוג אמריקאי</option>
+                        <option value="12">בולדוג צרפתי</option>
+                        <option value="13">בולדוג אנגלי</option>
+                        <option value="14">צ'או צ'או</option>
+                        <option value="15">שיצ'ו</option>
+                        <option value="16">אמסטף</option>
+                        <option value="17">פינצ'ר</option>
+                        <option value="18">רוטווילר</option>
+                        <option value="19">דוברמן</option>
+                        <option value="20">האסקי סיבירי</option>
+                        <option value="21">אחר</option>
+                    </select>
+
+                    <br /><br /><br />
+
+                    <font style="font-size:30px;">יש ברשותך כלב:</font><br />
+                    <div id="notgood3" style="color:red; font-weight:700;"> חובה לבחור את אחד האפשרויות. </div>
+                    <input type="radio" name="havedog" /> כן
+                    <input type="radio" name="havedog" /> לא
+
+                    <br /><br /><br />
+
+                    <input type="submit" value="שלח" disabled/>
+                    &nbsp;&nbsp;
+                    <input type="reset" value="מחק" disabled/>
+                </form>
+            </div>
+            <font style="color:#51ac00; font-size:35px;">הטופס נשלח בהצלחה, תודה והמשך גלישה מהנה!</font>
+        </div>
+        
+        <script>
+            document.getElementById("notgood0").hidden = true;
+            document.getElementById("notgood1").hidden = true;
+            document.getElementById("notgood2").hidden = true;
+            document.getElementById("notgood3").hidden = true;
+        </script>
+
+        <!-- Bottom Bar-->
+        <div class="BottomBar" style="font-size:18px;">
+        </div>
+
+    </center>
+</body>
+</html>

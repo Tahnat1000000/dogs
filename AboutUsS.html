@@ -1,0 +1,81 @@
+﻿<html>
+<head>
+    <title></title> 
+    <link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
+    <style>
+        th.A06 {
+            background-color: #d8d8d8;
+        }
+        div.infor {
+            bottom: 2px;
+        }
+
+        div.BottomBar {
+
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <!-- Logo -->
+    <center>
+        <marquee direction="right" bgcolor="#FFE5CC" onmouseover="this.stop()" onmouseout="this.start()">
+            <font style="color:orangered; font-weight:700;">האתר עודכן לאחרונה בתאריך:</font>
+            <font style="color:black; font-weight:700;">18/12/18</font>
+        </marquee>
+
+        <div class="logo" style="background-image:url(logo.jpg);"></div>
+
+        <!-- Menu -->
+        <table align="center" class="MENU">
+            <tr>
+                <th class="A01"><a class="A1" href="Main.html">דף ראשי</a></th>
+                <th class="A02"><a class="A1" href="Races/01.html">גזעים</a></th>
+                <th class="A03"><a class="A1" href="Diseases/01.html">מחלות</a></th>
+                <th class="A04" style=" width:230px;"><a class="A1" href="Backg.html">רקעים ותמונות</a></th>
+                <th class="A05"><a class="A1" href="Survey.html">סקר</a></th>
+                <th class="A06"><a class="A1" href="AboutUs.html">צרו קשר</a></th>
+            </tr>
+        </table>
+
+        <!-- Body-->
+
+        <div class="infor" dir="rtl" style="height: 400px;" align="right">
+            <br />
+
+            <form name="contact" onsubmit="return check(this)">
+                <table>
+                    <tr>
+                        <th>שם:</th>
+                        <td><input type="text" name="myname" style="border:1px solid grey;" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>אימייל:</th>
+                        <td><input type="text" name="myemail" style="border:1px solid grey;" /></td>
+                    </tr>
+                    <tr>
+                        <th>תוכן ההודעה:</th>
+                        <td><textarea cols="35" rows="10" name="letter" style="border:1px solid grey;"></textarea></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <th><input type="submit" value="שלח" disabled/></th>
+                        <th align="right"><input type="reset" value="מחק" disabled/></th>
+                    </tr>
+                </table>
+                <br />
+            </form>
+            <br />
+            <center>
+                <font style="color:#51ac00; font-size:35px;">פנייתך נשלחה בהצלחה, המשך גלישה מהנה!</font>
+            </center>
+                </div>
+        <!-- Bottom Bar-->
+        <div class="BottomBar" style="font-size:18px;">
+        </div>
+
+    </center>
+</body>
+</html>

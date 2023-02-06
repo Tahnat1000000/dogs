@@ -1,0 +1,155 @@
+﻿body {
+    background-image: linear-gradient(90deg, #d4d4d4, #FAFAFA,#FAFAFA,#FAFAFA,#FAFAFA, #d4d4d4);
+}
+
+img {
+    box-shadow: rgba(0,0,0,0.30) 0px 0px 20px;
+    width: 500px;
+}
+
+/* ------------------------ לוגו ----------------------- */
+/* ------------------------ לוגו ----------------------- */
+marquee {
+    width: 1200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+div.logo {
+    background-image: url(logo.gif);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 280px;
+}
+
+
+/* ------------------------ קישור תפריט ראשי ----------------------- */
+/* ------------------------ קישור תפריט ראשי ----------------------- */
+
+table.MENU {
+    width: 1202px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: 1px;
+}
+
+th.A01:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A01:hover a.A1 {
+        color: white;
+    }
+
+th.A02:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A02:hover a.A1 {
+        color: white;
+    }
+
+th.A03:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A03:hover a.A1 {
+        color: white;
+    }
+
+th.A04:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A04:hover a.A1 {
+        color: white;
+    }
+
+th.A05:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A05:hover a.A1 {
+        color: white;
+    }
+
+th.A06:hover {
+    background-color: #307eb6;
+    cursor: pointer;
+}
+
+    th.A06:hover a.A1 {
+        color: white;
+    }
+
+
+a.A1:hover {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+a.A1:link {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+a.A1:visited {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+a.A1:active {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+/* ------------------------ תוכן ----------------------- */
+/* ------------------------ תוכן ----------------------- */
+
+div.infor {
+    width: 1202px;
+    background-color: #f3f3f3;
+    position: relative;
+    bottom: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ------------------------ בר תחתון ----------------------- */
+/* ------------------------ בר תחתון ----------------------- */
+
+div.BottomBar {
+    width: 1200px;
+    height: 25px;
+    background-color: yellowgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ------------------------ תפריט מישני ----------------------- */
+/* ------------------------ תפריט מישני ----------------------- */
+
+a.A2:hover {
+    text-decoration: none;
+    color: #307eb6;
+    font-weight: 700;
+}
+
+a.A2:link {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+a.A2:visited {
+    text-decoration: none;
+    color: #307eb6;
+}
+
+a.A2:active {
+    text-decoration: none;
+    color: #307eb6;
+}
